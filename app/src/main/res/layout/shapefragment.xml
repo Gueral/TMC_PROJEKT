@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:weightSum="1">
 
     <TextView
         android:id="@+id/textview"
@@ -14,5 +16,30 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Wczytaj plik" />
+
+    <TextView
+        android:id="@+id/fileName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nazwa pliku: nazwa" />
+
+    <TextView
+        android:id="@+id/fileSource"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ścieżka do pliku: root/blabla" />
+
+    <TextView
+        android:id="@+id/fileContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Zawartość: 159 polyglonów" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.68"
+        app:srcCompat="@mipmap/ic_launcher" />
 
 </LinearLayout>

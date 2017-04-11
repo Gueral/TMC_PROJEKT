@@ -16,11 +16,6 @@ import com.example.kaczor.tmc_shpreader.Shape.ShapeFragment;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
-    static {
-        System.loadLibrary("hello-android-jni");
-    }
-    public native String getMsgFromJni();
-
     private NavigationView navigationView;;
     private DrawerLayout drawer;
     private FragmentManager fragmentManager;
