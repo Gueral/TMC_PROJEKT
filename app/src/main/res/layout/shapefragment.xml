@@ -9,4 +9,10 @@
         android:layout_height="wrap_content"
         android:text="Shape Fragment" />
 
+    <Button
+        android:id="@+id/load"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wczytaj plik" />
+
 </LinearLayout>
